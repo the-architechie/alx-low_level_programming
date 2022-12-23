@@ -13,17 +13,15 @@ void print_rev(char *s)
 	int count;
 
 	count = 0;
-	len = 1;
-	while (*s != '\0')
+	len = 0;
+	while (*(s + len) != '\0')
 	{
-		s++;
 		len++;
 	}
 
-	printf("%d\n", 
-	for (count = len; count <= 0; count--)
+	for (count = len - 1; count >= 0; count--)
 	{
-		_putchar(*(s + count));
-
+		_putchar(s[count]);
 	}
+	_putchar('\n');
 }
