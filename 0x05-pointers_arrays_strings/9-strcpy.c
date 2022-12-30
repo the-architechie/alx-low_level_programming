@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * _strcpy - copies the string copied to by src, including the terminating\n
- * null byte to the buffer pointed to by dest
- * @dest: pointer to string buffer to which src string is copied
- * @src: pointer to the original string which is to be copied to dest
- * Return: returns the value pointed to dest
+ * _strlen - Calculate the length of a string
+ * @str: the string to assess
+ * Return: returns the length of a string
  */
 
 int _strlen(char *str)
@@ -21,6 +19,14 @@ int _strlen(char *str)
 	return (len);
 }
 
+
+/**
+ * _strcpy - copies the string copied to by src, including the terminating\n
+ * null byte to the buffer pointed to by dest
+ * @dest: pointer to string buffer to which src string is copied
+ * @src: pointer to the original string which is to be copied to dest
+ * Return: returns the value pointed to dest
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i;
