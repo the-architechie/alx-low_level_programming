@@ -22,10 +22,13 @@ char *_strncat(char *dest, char *src, int n)
 	}
 
 	j = 0;
-	while ((*(dest + len) = *(src + j)) && j < n - 1)
+	if (n > 0)
 	{
-		len++;
-		j++;
+		while ((*(dest + len) = *(src + j)) && j < n - 1)
+		{
+			len++;
+			j++;
+		}
 	}
 	return (dest);
 }
