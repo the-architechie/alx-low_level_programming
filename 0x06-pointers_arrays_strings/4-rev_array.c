@@ -20,5 +20,4 @@ void reverse_array(int *a, int n)
 		a[n - 1] = temp;
 		n--;
 	}
-	printf("first digit is %d\n", a[i]);
 }
