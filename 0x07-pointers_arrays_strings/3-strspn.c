@@ -14,6 +14,9 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int j;
 	unsigned int count = 0;
 
+	if (( s == NULL || s2 == NULL))
+		return (count);
+
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
 		for (j = 0; *(accept + j) != '\0'; j++)
