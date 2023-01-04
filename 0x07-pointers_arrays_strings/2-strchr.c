@@ -13,6 +13,9 @@ char *_strchr(char *s, char c)
 	int i;
 	int flag = 0;
 
+	if ( c == '\0')
+		flag = 1;
+
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
 		if (*(s + i) == c)
