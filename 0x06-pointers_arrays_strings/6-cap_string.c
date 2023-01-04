@@ -4,7 +4,7 @@
  * cap_string - capitalises all words of a string
  * seperators of words: space, tabulation, newline, , , ., ?, "
  * (, ), {, }
- * @s: the string whose words to capitalise
+ * @str: the string whose words to capitalise
  * Return: Returns the capitalised string
  */
 
@@ -13,7 +13,8 @@ char *cap_string(char *str)
 	int i;
 	int j;
 	int flag = 1;
-	char chars[] = {' ', '\t', '\n', ',', ';',  '.', '!', '?', '"', '(', ')', '{', '}'};
+	char chars[] = {' ', '\t', '\n', ',', ';',  '.', '!', '?', '"',
+			'(', ')', '{', '}'};
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
