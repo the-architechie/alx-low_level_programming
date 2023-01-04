@@ -12,6 +12,7 @@ char *cap_string(char *str)
 {
 	int i;
 
+	char chars[] = {
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (i == 0)
